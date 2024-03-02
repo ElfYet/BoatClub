@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './Styles/App.css';
 import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 import {
   BrowserRouter as Router, 
   Route, 
@@ -39,23 +40,21 @@ class App extends Component {
 
 export default App;
 
+// use -f to force push the main branch, need to update sensitive data
 
-// Original Code
+// Solo Developer Git Workflow
 /*
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+// Switch to seperate branch for small contributions (Each branch isolates different line of development... In this case just use 'feature')
+git switch feature
+// Make changes in the feature branch and commit
+git add .
+git commit -m "Your commit message"
+// Merge changes into the main branch
+git switch main
+git merge feature
+// After resolving merge issues commit main branch
+git add .
+git commit -m "Merge branch 'feature'"
+// Push changes to remote (Just pushing main branch for solo work)
+git push origin main
 */

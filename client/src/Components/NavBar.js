@@ -5,56 +5,51 @@ link should navigate
 
 The <ul> element is used to create an unordered list.
 While <li> is used to define list items
-
-TO DO LIST:
-- Fix Hamburger Menu (Currently has no functionality)
 */
 
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-class NavBar extends Component {
-  state = {  } 
-  render() { 
-    return (
-      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Skyline Boat Club</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+function NavBar() {
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item dropdown">
+  return (
+    <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <a className="navbar-brand" href="/">Skyline Boat Club</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/about">About</a>
-                <a class="dropdown-item" href="/Login">Login</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/register">Register</a>
-              </div>
-            </li>
-          </ul>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="/">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/about">About</a>
+          </li>
+          <li className="nav-item dropdown">
 
-          <div>
-            <a class="nav-link" href="/login">
-              <button class="btn btn-outline-primary" type="button">Login</button>
-            </a>
-          </div>
-          <div>
-            <a class="nav-link" href="/registration">
-              <button class="btn btn-sm btn-outline-secondary" type="button">Register</button>
-            </a>
-          </div>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="/about">About</a>
+              <a className="dropdown-item" href="/Login">Login</a>
+              <div className="dropdown-divider"></div>
+              <a className="dropdown-item" href="/register">Register</a>
+            </div>
+          </li>
+        </ul>
+
+        <div>
+          <a className="nav-link" href="/login">
+            <button className="btn btn-outline-primary" type="button">Login</button>
+          </a>
         </div>
-      </nav>
-    );
-  }
+        <div>
+          <a className="nav-link" href="/registration">
+            <button className="btn btn-sm btn-outline-secondary" type="button">Register</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
 }
  
 export default NavBar;

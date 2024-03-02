@@ -1,0 +1,4 @@
+- Route Controller Files (e.g. 'UserControllers.js'):
+	- These files contain functions (controllers) that handle the logic for processing requests and sending responses. 
+    - Controllers are responsible for interacting with databases, performing business logic, and returning appropriate HTTP responses.
+    - Controllers keep the route handlers clean and focused on routing logic
