@@ -1,4 +1,5 @@
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ElfYet/BoatClub/badge)](https://securityscorecards.dev/viewer/?uri=github.com/ElfYet/BoatClub)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8577/badge)](https://www.bestpractices.dev/projects/8577)
 
 # Getting Started with Create React App
 
