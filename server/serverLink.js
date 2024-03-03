@@ -1,6 +1,8 @@
 /*At the moment this is a copy of professor Osheroff's code. 
 This must be edit to fit the particular Boat Club website"*/
 
+// Since I'm using react this file is not needed
+/*
 function doExternalFunction() {
     var name = document.getElementById('new_text_input').ariaValueMax;
     var newtext = "Hello " + name
@@ -54,3 +56,4 @@ function databaseWrite() {
         })
         .catch((error) => console.log('trouble - ' + error));
 }
+*/
