@@ -16,7 +16,7 @@ updates:
           - "minor"
           - "patch"
 
-  # Watch the root Gemfile used for sorbet typing
+  # Watch the root Gemfile used for sorbet typing 
   - package-ecosystem: "bundler"
     directory: "/"
     schedule:
